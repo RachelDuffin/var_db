@@ -25,10 +25,10 @@ class ACMG(models.Model):
         return self.evidence
 
 class Variant(models.Model):
-    chr = models.CharField(max_length=2, required=True)
-    start = models.IntegerField(required=True)
-    ref =  models.CharField(max_length=150, required=True)
-    alt = models.CharField(max_length=150, required=True)
+    chr = models.CharField(max_length=2)
+    start = models.IntegerField()
+    ref =  models.CharField(max_length=150)
+    alt = models.CharField(max_length=150)
     gene = models.ForeignKey('Gene', on_delete=models.PROTECT)
     build = models.ForeignKey('GenomeBuild', on_delete=models.PROTECT)
     hgvsc = models.CharField(max_length=150)
