@@ -8,3 +8,6 @@ def variantlist(request):
     variants = Variant.objects.all()
     return render(request, 'vdb/variant_list.html', {'variants': variants})
 
+def login(request):
+    return render(request, 'vdb/login.html', {'login' : login})
+
