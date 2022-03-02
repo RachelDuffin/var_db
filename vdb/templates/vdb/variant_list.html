@@ -1,7 +1,37 @@
 {%  extends 'vdb/base_generic.html' %}
 
 {%  block content %}
-    {% for variant in variants %}
-    {{variant}}
-    {% endfor %}
+<h1>Variants</h1>
+<div>
+<div style="width: 200px; float: right;" >
+		<input class="form-control" id="myInput" type="text" placeholder="Search..">
+</div>
+<table class="table">
+    <thead><tr>
+        <th scope="col">Variant</th>
+        <th scope="col">Gene</th>
+        <th scope="col">Score</th>
+        <th scope="col"></th>
+    </tr></thead>
+    <tbody id="myTable">
+    <tr>        {% for variant in variants %}
+        <td>{{variant}}</td>
+        <td>{{variant.gene}}</td>
+        <td>{{variant.score}}</td>
+        <td><a href="">more details</a></td>
+    {% endfor %}</tr>
+    </tbody>
+
+</table></div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 {% endblock %}
