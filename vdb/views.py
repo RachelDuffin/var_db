@@ -16,3 +16,12 @@ def variant_new(request):
 	else:
 		form = AddVariantForm()
 	return render(request, '../templates/variant_new.html', {'form': form})
+from .models import Variant
+
+def home(request):
+    return render(request, 'vdb/home.html')
+
+def variantlist(request):
+    variants = Variant.objects.all()
+    return render(request, 'vdb/variant_list.html', {'variants': variants})
+
