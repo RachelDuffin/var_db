@@ -8,5 +8,3 @@ def variantlist(request):
     variants = Variant.objects.all()
     return render(request, 'vdb/variant_list.html', {'variants': variants})
 
-
-
