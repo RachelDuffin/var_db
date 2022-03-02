@@ -48,4 +48,4 @@ class Variant(models.Model):
         ]
 
     def __str__(self):
-        return self.chr+":"+self.start+":"+self.ref+":"+self.alt
+        return f"{self.chr}:{self.start}:{self.ref}:{self.alt}"
