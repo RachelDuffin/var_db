@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>Variant DB</title>{% endblock %}
+</head>
+<body>
+  {% block sidebar %}
+      <ul class="sidebar-nav">
+   {% if user.is_authenticated %}
+     <li>User: {{ user.get_username }}</li>
+     <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
+   {% else %}
+     <li><a href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+   {% endif %}
+  </ul>
+  {% endblock %}
+
+  {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+
+
+</body>
+</html>
