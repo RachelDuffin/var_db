@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from vdb import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('variant/new/', views.variant_new, name='variant_new')
 ]
