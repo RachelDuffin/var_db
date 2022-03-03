@@ -6,9 +6,9 @@ from django.forms.models import model_to_dict
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import Variant
-from .forms import AddVariantForm, AddGeneForm
+from .forms import AddVariantForm
+from .forms import AddGeneForm
 
-    
 def home(request):
     return render(request, 'vdb/home.html')
 
@@ -32,6 +32,7 @@ def variant_new(request):
         if form.is_valid():
             variant = form.save(commit=False)
             variant.created_by = request.user
+            variant.updated_by = request.user
             variant.save()
             form.save_m2m()
             messages.success(request, "Variant successfully added to VarDB.")
@@ -63,6 +64,7 @@ def update_variant(request, pk=None):
     if request.method == 'POST':
         if form.is_valid():
             variant = form.save(commit=False)
+            variant.updated_by = request.user
             variant.save()
             form.save_m2m()
             messages.success(request, "Variant successfully updated.")
