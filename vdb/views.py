@@ -28,10 +28,9 @@ def variant_new(request):
 		form = AddVariantForm(request.POST)
 		if form.is_valid():
 			variant = form.save(commit=False)
-#			variant.created_by = request.user
-#			variant.created_at = timezone.now()
+			variant.created_by = request.user
 			variant.save()
-#			return redirect('variant_detail', pk=variant.pk)
+			return redirect('variant_viewer', pk=variant.pk)
 	else:
 		form = AddVariantForm()
 	return render(request, 'vdb/variant_new.html', {'form': form})
