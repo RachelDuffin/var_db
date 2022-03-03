@@ -19,7 +19,7 @@
         <td>{{variant}}</td>
         <td>{{variant.gene}}</td>
         <td>{{variant.get_score_display}}</td>
-        <td><a href="">more details</a></td>
+        <td><a href="{% url 'variant_viewer' pk=variant.pk %}">more details</a></td>
     </tr>
     {% endfor %}
     </tbody>
