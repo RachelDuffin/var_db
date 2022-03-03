@@ -1,0 +1,37 @@
+{%  extends 'vdb/base_generic.html' %}
+
+{%  block content %}
+<h1>Genes</h1>
+<div>
+<div style="width: 200px; float: right;" >
+		<input class="form-control" id="myInput" type="text" placeholder="Search..">
+</div>
+<table class="table">
+    <thead><tr>
+        <th scope="col">Gene</th>
+        <th scope="col">NCBI</th>
+        <th scope="col">Transcript</th>
+    </tr></thead>
+    <tbody id="myTable">
+    {% for gene in genes %}
+    <tr>
+        <td>{{gene.symbol}}</td>
+        <td>{{gene.NCBI}}</td>
+        <td>{{gene.transcript}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+
+</table></div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+{% endblock %}

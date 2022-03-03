@@ -33,8 +33,13 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href ="{% url 'variant_new' %}">Variant</a>
+              <a class="dropdown-item" href ="{% url 'gene_new' %}">Gene</a>
           </div>
       </ul>
+        <form class="form-inline my-2 my-lg-0" action = "{% url 'search_results' %}" method = "get">
+            <input class="form-control mr-sm-2" name="q" type="search" placeholder="Enter a Variant or Gene" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
   </nav>
   {% endblock %}
@@ -46,6 +51,7 @@
     {% block sidebar %}
         <ul class="sidebar-nav">
             <li><a href ="{% url 'variant_list' %}">All Variants</a></li>
+            <li><a href ="{% url 'gene_list' %}">All Genes</a></li>
         {% if user.is_authenticated %}
             <li>User: {{ user.get_username }}</li>
             <li><a href="{% url 'logout'%}?next={{request.path}}">Logout</a></li>
