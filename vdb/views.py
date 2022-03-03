@@ -31,7 +31,7 @@ def variant_new(request):
 			variant = form.save(commit=False)
 			variant.created_by = request.user
 			variant.save()
-      form.save_m2m()
+			form.save_m2m()
 			messages.success(request, "Variant successfully added to VarDB.")
 			return redirect('variant_viewer', pk=variant.pk)
 	else:
