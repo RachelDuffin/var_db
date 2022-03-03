@@ -3,6 +3,7 @@ from django.shortcuts import redirect
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.forms.models import model_to_dict
+from django.contrib import messages
 from .models import Variant
 from .forms import AddVariantForm, AddGeneForm
 
@@ -30,6 +31,7 @@ def variant_new(request):
 			variant = form.save(commit=False)
 			variant.created_by = request.user
 			variant.save()
+			messages.success(request, "Variant successfully added to VarDB.")
 			return redirect('variant_viewer', pk=variant.pk)
 	else:
 		form = AddVariantForm()
@@ -42,6 +44,7 @@ def gene_new(request):
 		if form.is_valid():
 			gene = form.save(commit=False)
 			gene.save()
+			messages.success(request, "Gene successfully added to VarDB.")
 			return redirect('variant_new')
 	else:
 		form = AddGeneForm()

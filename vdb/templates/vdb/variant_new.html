@@ -1,10 +1,20 @@
 {%  extends 'vdb/base_generic.html' %}
 {% load crispy_forms_tags %}
-{% block script %}
-
-
-{% endblock %}
 {% block content %}
+{% if messages %}
+<div class="messages">
+    {% for message in messages %}
+<div class="container-fluid p-0" style="background-color: #ccffcc;">
+  <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
+    <button type="button" class="close" data-dismiss="alert" style="border: 0px; background-color: #ccffcc;">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    {{ message }}
+  </div>
+</div>
+{% endfor %}
+</div>
+{% endif %}
 <h2>Add new variant</h2>
 <form method="POST" class="post-form">{% csrf_token %}
     {% csrf_token %}
