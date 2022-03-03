@@ -7,7 +7,7 @@ from django.contrib import messages
 from .models import Variant
 from .forms import AddVariantForm, AddGeneForm
 
-
+    
 def home(request):
     return render(request, 'vdb/home.html')
 
@@ -31,6 +31,7 @@ def variant_new(request):
 			variant = form.save(commit=False)
 			variant.created_by = request.user
 			variant.save()
+			form.save_m2m()
 			messages.success(request, "Variant successfully added to VarDB.")
 			return redirect('variant_viewer', pk=variant.pk)
 	else:
@@ -49,3 +50,16 @@ def gene_new(request):
 	else:
 		form = AddGeneForm()
 	return render(request, 'vdb/gene_new.html', {'form': form})
+
+def update_variant(request, pk=None):
+    obj = get_object_or_404(Variant, pk=pk)
+    form = AddVariantForm(request.POST or None,
+                        request.FILES or None, instance=obj)
+    if request.method == 'POST':
+        if form.is_valid():
+            variant = form.save(commit=False)
+            variant.save()
+            form.save_m2m()
+            messages.success(request, "Variant successfully updated.")
+            return redirect('variant_viewer', pk=variant.pk)
+    return render(request, 'vdb/variant_update.html', {'form': form})
