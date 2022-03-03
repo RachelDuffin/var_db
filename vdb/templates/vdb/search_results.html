@@ -1,0 +1,20 @@
+{% extends "vdb/base_generic.html" %}
+{% block content %}
+{% load static %}
+<h1>Search Results</h1>
+<div>
+    {% if variant_list %}
+    <p>Your search has returned the following Variant(s):</p>
+        {% for variant in variant_list %}
+        <a href = "{% url 'variant_viewer' variant.pk %}">{{ variant }}</a>
+        {% endfor %}
+    {% elif gene_list %}
+        <p>Your search has returned the following Gene(s):</p>
+        {% for gene in gene_list %}
+        <a>{{ gene.symbol }} </a>
+        {% endfor %}
+    {%  else %}
+        <p>Your search has not returned any results.</p>
+    {% endif %}
+
+{% endblock %}
