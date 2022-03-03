@@ -10,12 +10,12 @@ def variant_new(request):
 		if form.is_valid():
 			variant = form.save(commit=False)
 #			variant.created_by = request.user
-			variant.created_at = timezone.now()
+#			variant.created_at = timezone.now()
 			variant.save()
-			return redirect('variant_detail', pk=variant.pk)
+#			return redirect('variant_detail', pk=variant.pk)
 	else:
 		form = AddVariantForm()
-	return render(request, '../templates/variant_new.html', {'form': form})
+	return render(request, 'vdb/variant_new.html', {'form': form})
 from .models import Variant
 
 def home(request):
