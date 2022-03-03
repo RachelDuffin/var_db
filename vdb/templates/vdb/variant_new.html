@@ -1,6 +1,9 @@
 {%  extends 'vdb/base_generic.html' %}
 {% load crispy_forms_tags %}
+{% block script %}
 
+
+{% endblock %}
 {% block content %}
 <h2>Add new variant</h2>
 <form method="POST" class="post-form">{% csrf_token %}
@@ -9,6 +12,11 @@
       <div class="col-3">
         {{ form.gene|as_crispy_field }}
       </div>
+        <div class="row">
+      <div class="col-3">
+        <a href="/gene/new" id="add_gene" onclick="return showAddPopup(this);"><span class="glyphicon glyphicon-plus"></span> Add new gene</a>
+      </div>
+        </div>
       <div class="col-3">
         {{ form.chr|as_crispy_field }}
       </div>
@@ -45,7 +53,7 @@
         <div class="col-3">
             {{ form.score|as_crispy_field }}
         </div>
-    </div>
+    </div><br>
     <button type="submit" class="save btn btn-secondary">Save</button>
 </form>
 {% endblock %}

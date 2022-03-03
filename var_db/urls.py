@@ -19,6 +19,5 @@ from vdb import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('variant/new/', views.variant_new, name='variant_new'),
     path('', include('vdb.urls'))
 ]

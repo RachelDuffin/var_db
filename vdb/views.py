@@ -1,9 +1,17 @@
 from django.shortcuts import render
-from .forms import AddVariantForm
 from django.shortcuts import redirect
-from django.utils import timezone
+from .models import Variant
+from .forms import AddVariantForm, AddGeneForm
 
 
+def home(request):
+    return render(request, 'vdb/home.html')
+
+def variantlist(request):
+    variants = Variant.objects.all()
+    return render(request, 'vdb/variant_list.html', {'variants': variants})
+
+# form views
 def variant_new(request):
 	if request.method == "POST":
 		form = AddVariantForm(request.POST)
@@ -16,12 +24,14 @@ def variant_new(request):
 	else:
 		form = AddVariantForm()
 	return render(request, 'vdb/variant_new.html', {'form': form})
-from .models import Variant
 
-def home(request):
-    return render(request, 'vdb/home.html')
-
-def variantlist(request):
-    variants = Variant.objects.all()
-    return render(request, 'vdb/variant_list.html', {'variants': variants})
-
+def gene_new(request):
+	if request.method == "POST":
+		form = AddGeneForm(request.POST)
+		if form.is_valid():
+			gene = form.save(commit=False)
+			gene.save()
+			return redirect('variant_new')
+	else:
+		form = AddGeneForm()
+	return render(request, 'vdb/gene_new.html', {'form': form})
