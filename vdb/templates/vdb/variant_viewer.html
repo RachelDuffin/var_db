@@ -4,9 +4,9 @@
 {% if messages %}
 <div class="messages">
     {% for message in messages %}
-<div class="container-fluid p-0" style="background-color: #ccffcc;">
+<div class="container-fluid p-0">
   <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
-    <button type="button" class="close" data-dismiss="alert" style="border: 0px; background-color: #ccffcc;">
+    <button type="button" class="close" data-dismiss="alert" style="border: 0px">
       <span aria-hidden="true">&times;</span>
     </button>
     {{ message }}
@@ -61,5 +61,7 @@
     {%  endfor %}
 </table>
 </body>
+
+<a href="{% url 'variant_update' pk=variant.id %}">Edit variant details</a>
 
 {% endblock %}

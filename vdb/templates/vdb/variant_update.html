@@ -1,32 +1,14 @@
 {%  extends 'vdb/base_generic.html' %}
 {% load crispy_forms_tags %}
+
 {% block content %}
-{% if messages %}
-<div class="messages">
-    {% for message in messages %}
-<div class="container-fluid p-0">
-  <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
-    <button type="button" class="close" data-dismiss="alert" style="border: 0px;">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    {{ message }}
-  </div>
-</div>
-{% endfor %}
-</div>
-{% endif %}
-<h2>Add new variant</h2>
+<h2>Edit variant details</h2>
 <form method="POST" class="post-form">{% csrf_token %}
     {% csrf_token %}
     <div class="row">
       <div class="col-3">
         {{ form.gene|as_crispy_field }}
       </div>
-        <div class="row">
-      <div class="col-3">
-        <a href="/gene/new" id="add_gene" onclick="return showAddPopup(this);"><span class="glyphicon glyphicon-plus"></span> Add new gene</a>
-      </div>
-        </div>
       <div class="col-3">
         {{ form.chr|as_crispy_field }}
       </div>
@@ -63,7 +45,7 @@
         <div class="col-3">
             {{ form.score|as_crispy_field }}
         </div>
-    </div><br>
+    </div>
     <button type="submit" class="save btn btn-secondary">Save</button>
-</form></form><button class="btn btn-link" onclick="javascript:history.back();">Cancel</button>
+</form><button class="btn btn-link" onclick="javascript:history.back();">Cancel</button>
 {% endblock %}
