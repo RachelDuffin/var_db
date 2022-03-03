@@ -1,0 +1,22 @@
+{%  extends 'vdb/base_generic.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h2>Add new gene</h2>
+<form method="POST" class="post-form">{% csrf_token %}
+    {% csrf_token %}
+        <div class="row">
+      <div class="col-3">
+        {{ form.symbol|as_crispy_field }}
+      </div>
+      <div class="col-3">
+        {{ form.ncbi|as_crispy_field }}
+      </div>
+      <div class="col-3">
+        {{ form.transcript|as_crispy_field }}
+      </div>
+    </div><br>
+
+    <button type="submit" class="save btn btn-secondary">Save</button>
+</form>
+{% endblock %}
