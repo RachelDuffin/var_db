@@ -1,0 +1,51 @@
+{%  extends 'vdb/base_generic.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h2>Add new variant</h2>
+<form method="POST" class="post-form">{% csrf_token %}
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-3">
+        {{ form.gene|as_crispy_field }}
+      </div>
+      <div class="col-3">
+        {{ form.chr|as_crispy_field }}
+      </div>
+      <div class="col-3">
+        {{ form.build|as_crispy_field }}
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            {{ form.start|as_crispy_field }}
+        </div>
+        <div class="col-3">
+            {{ form.ref|as_crispy_field }}
+        </div>
+        <div class="col-3">
+            {{ form.alt|as_crispy_field }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            {{ form.hgvsc|as_crispy_field }}
+        </div>
+        <div class="col-3">
+            {{ form.hgvsp|as_crispy_field }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            {{ form.ACMG|as_crispy_field }}
+        </div>
+        <div class="col-3">
+            {{ form.score|as_crispy_field }}
+        </div>
+    </div>
+    <button type="submit" class="save btn btn-secondary">Save</button>
+</form>
+{% endblock %}

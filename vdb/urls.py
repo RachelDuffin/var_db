@@ -3,7 +3,10 @@ from . import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.home, name='home'),	
+    path('variants/', views.variantlist, name='variant_list'),
+    path('variants/<int:pk>/', views.variantviewer, name='variant_viewer'),
+    path('variants/new/', views.variant_new, name='variant_new'),
   
     # authentication pages
     path('login/', auth_views.LoginView.as_view(template_name='vdb/login.html'), name = 'login'),
