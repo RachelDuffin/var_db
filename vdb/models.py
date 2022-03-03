@@ -34,7 +34,15 @@ class Variant(models.Model):
     hgvsc = models.CharField(max_length=150)
     hgvsp = models.CharField(max_length=150)
     ACMG = models.ManyToManyField('ACMG', blank=True)
-    score = models.IntegerField()
+    CHOICES = (
+        (1, 'Benign'),
+        (2, 'Likely benign'),
+        (3, 'Variant of uncertain significance'),
+        (4, 'Likely pathogenic'),
+        (5, 'Pathogenic')
+    )
+
+    score = models.PositiveSmallIntegerField(choices=CHOICES, default=3)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True, on_delete=models.PROTECT,
