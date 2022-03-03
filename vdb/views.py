@@ -1,10 +1,10 @@
-
 from django.shortcuts import render, get_object_or_404
 from .forms import AddVariantForm
 from django.shortcuts import redirect
 from django.utils import timezone
 from .models import Variant
 from django.forms.models import model_to_dict
+from django.contrib import messages
 
 def variant_new(request):
 	if request.method == "POST":
@@ -14,7 +14,7 @@ def variant_new(request):
 #			variant.created_by = request.user
 #			variant.created_at = timezone.now()
 			variant.save()
-#			return redirect('variant_detail', pk=variant.pk)
+			return redirect('variant_viewer', pk=variant.pk)
 	else:
 		form = AddVariantForm()
 	return render(request, 'vdb/variant_new.html', {'form': form})
