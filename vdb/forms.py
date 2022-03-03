@@ -1,3 +1,4 @@
+import re
 from django import forms
 from .models import Variant, Gene
 
@@ -33,3 +34,15 @@ class AddGeneForm(forms.ModelForm):
         self.fields['symbol'].widget.attrs['placeholder'] = "HBB"
         self.fields['ncbi'].widget.attrs['placeholder'] = "3043"
         self.fields['transcript'].widget.attrs['placeholder'] = "NM_000518.5"
+
+    def clean(self):
+        super(AddGeneForm, self).clean()
+
+        # getting transcript from cleaned_data
+        transcript = self.cleaned_data.get('transcript')
+
+        # validating the transcript
+        if not re.match("NM_[0-9]*\.[0-9]", transcript):
+            self._errors['transcript'] = self.error_class(['RefSeq transcript should be provided in the format NM_XXXXX.X'])
+
+        return self.cleaned_data
