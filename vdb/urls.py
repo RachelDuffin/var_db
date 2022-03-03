@@ -15,6 +15,10 @@ urlpatterns = [
     path('variants/', views.variantlist, name='variant_list'),
     path('variants/new/', views.variant_new, name='variant_new'),
     path('variants/<int:pk>/', views.variantviewer, name='variant_viewer'),
-    path('gene/new/', views.gene_new, name='gene_new')
+    path('gene/new/', views.gene_new, name='gene_new'),
+    path('genes', views.genelist, name='gene_list'),
+
+    # search pages
+    path('search/results', views.searchdb, name='search_results')
   
     ]
