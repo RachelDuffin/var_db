@@ -69,6 +69,8 @@ TEMPLATES = [
     },
 ]
 
+LOGIN_REDIRECT_URL = '/'
+
 WSGI_APPLICATION = 'var_db.wsgi.application'
 
 
