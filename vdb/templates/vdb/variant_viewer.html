@@ -1,0 +1,51 @@
+{%  extends 'vdb/base_generic.html' %}
+
+{%  block content %}
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">CHR</th>
+        <th scope="col">START</th>
+        <th scope="col">REF</th>
+        <th scope="col">ALT</th>
+        <th scope="col">GENE</th>
+        <th scope="col">BUILD</th>
+        <th scope="col">HGVSC</th>
+        <th scope="col">HGVSP</th>
+        <th scope="col">SCORE</th>
+        <th scope="col">CREATED BY</th>
+        <th scope="col">UPDATED BY</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>{{ variant.chr }}</td>
+        <td>{{ variant.start }}</td>
+        <td>{{ variant.ref }}</td>
+        <td>{{ variant.alt }}</td>
+        <td>{{ variant.gene }}</td>
+        <td>{{ variant.build }}</td>
+        <td>{{ variant.hgvsc }}</td>
+        <td>{{ variant.hgvsp }}</td>
+        <td>{{ variant.score }}</td>
+        <td>{{ variant.created_by }}</td>
+        <td>{{ variant.updated_by }}</td>
+    </tr>
+</table>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">EVIDENCE</th>
+            <th scope="col">DESCRIPTION</th>
+        </tr>
+    </thead>
+    {% for dictionary in ACMG %}
+    <tr>
+        <td>{{ dictionary.evidence }}</td>
+        <td>{{ dictionary.description }}</td>
+    </tr>
+    {%  endfor %}
+</table>
+</body>
+
+{% endblock %}
