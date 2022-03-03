@@ -14,12 +14,14 @@
         <th scope="col"></th>
     </tr></thead>
     <tbody id="myTable">
-    <tr>        {% for variant in variants %}
+    {% for variant in variants %}
+    <tr>
         <td>{{variant}}</td>
         <td>{{variant.gene}}</td>
         <td>{{variant.get_score_display}}</td>
         <td><a href="">more details</a></td>
-    {% endfor %}</tr>
+    </tr>
+    {% endfor %}
     </tbody>
 
 </table></div>
