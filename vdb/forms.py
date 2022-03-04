@@ -18,7 +18,7 @@ class AddVariantForm(forms.ModelForm):
         self.fields['ref'].widget.attrs['placeholder'] = "G"
         self.fields['alt'].widget.attrs['placeholder'] = "T"
         self.fields['hgvsc'].widget.attrs['placeholder'] = "c.396C>A"
-        self.fields['hgvsp'].widget.attrs['placeholder'] = "p.Asn132Lys"
+        self.fields['hgvsp'].widget.attrs['placeholder'] = "p.(Asn132Lys)"
 
 class AddGeneForm(forms.ModelForm):
     class Meta:

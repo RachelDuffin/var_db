@@ -377,7 +377,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$260000$GzTAi71Co13lFvZegWijHn$kS+vjF9GrJ/DK1NsvL58yP/jqQSGqTfpTcwjT5kQ8kk=",
-        "last_login": "2022-03-02T15:02:59.876Z",
+        "last_login": "2022-03-04T10:51:44.032Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -472,6 +472,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "jz9dz7c0gap4xmlfi7inh9z1yjyp213r",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQAP_C2RBogYBH776BsLusVA0kpT0Z_64kPeh1ZjIvEdO-lbj3vMaFxFlocfplkPCR6xB0T_XWJLa6rQvIkcjDdnltlJ-Xo_0blNTL2DpvZs9ogwWNU0BmhSoEx4pM1pr4a51yMBFknsEYsF4xslFMybJ4fwDlmjiY:1nQ5XE:ugmeGSk8JoteNH52LfcsZ3SsQZGFH9lTWSibjxQr_Qg",
+        "expire_date": "2022-03-18T10:51:44.045Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "w52b6r0rghbnaxgzsq2om9ut6tpj1rlw",
     "fields": {
         "session_data": ".eJxVjEEOwiAQAP_C2RBogYBH776BsLusVA0kpT0Z_64kPeh1ZjIvEdO-lbj3vMaFxFlocfplkPCR6xB0T_XWJLa6rQvIkcjDdnltlJ-Xo_0blNTL2DpvZs9ogwWNU0BmhSoEx4pM1pr4a51yMBFknsEYsF4xslFMybJ4fwDlmjiY:1nPQVH:dSiPRUK54T6BTfjjAEwGeGiMYBgtCSk-VNgNxXLh-A0",
@@ -499,6 +507,24 @@
         "symbol": "BRCA1",
         "ncbi": 672,
         "transcript": "NM_007294.4"
+    }
+},
+{
+    "model": "vdb.gene",
+    "pk": 2,
+    "fields": {
+        "symbol": "HBB",
+        "ncbi": 3043,
+        "transcript": "NM_000518.5"
+    }
+},
+{
+    "model": "vdb.gene",
+    "pk": 3,
+    "fields": {
+        "symbol": "BRCA2",
+        "ncbi": 675,
+        "transcript": "NM_000059.4"
     }
 },
 {
@@ -651,6 +677,1615 @@
             3,
             6,
             9
+        ]
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 2,
+    "fields": {
+        "chr": "17",
+        "start": 41256266,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.314A>G",
+        "hgvsp": "p.(Tyr105Cys)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 3,
+    "fields": {
+        "chr": "17",
+        "start": 41256210,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.370A>G",
+        "hgvsp": "p.(Ile124Val)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 4,
+    "fields": {
+        "chr": "17",
+        "start": 41256200,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.380G>A",
+        "hgvsp": "p.(Ser127Asn)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 5,
+    "fields": {
+        "chr": "17",
+        "start": 41256190,
+        "ref": "G",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.390C>G",
+        "hgvsp": "p.(Tyr130*)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 6,
+    "fields": {
+        "chr": "17",
+        "start": 41256184,
+        "ref": "G",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.396C>A",
+        "hgvsp": "p.(Asn132Lys)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 7,
+    "fields": {
+        "chr": "17",
+        "start": 41249253,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.593+8A>G",
+        "hgvsp": "?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 8,
+    "fields": {
+        "chr": "17",
+        "start": 41249245,
+        "ref": "G",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.593+16C>G",
+        "hgvsp": "p.(=)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 9,
+    "fields": {
+        "chr": "17",
+        "start": 41249236,
+        "ref": "T",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.593+25A>T",
+        "hgvsp": "p.?",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 10,
+    "fields": {
+        "chr": "17",
+        "start": 41249184,
+        "ref": "A",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.593+77T>C",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 11,
+    "fields": {
+        "chr": "17",
+        "start": 41248164,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.594-225G>A",
+        "hgvsp": "p.(=)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 12,
+    "fields": {
+        "chr": "17",
+        "start": 41247973,
+        "ref": "A",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.594-34T>C",
+        "hgvsp": "p.?, p.(=)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 13,
+    "fields": {
+        "chr": "17",
+        "start": 41247954,
+        "ref": "C",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.594-15G>C",
+        "hgvsp": "NA",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 14,
+    "fields": {
+        "chr": "17",
+        "start": 41247941,
+        "ref": "T",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.594-2A>C",
+        "hgvsp": "p.?, ?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 15,
+    "fields": {
+        "chr": "17",
+        "start": 41247941,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.594-2A>G",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 16,
+    "fields": {
+        "chr": "17",
+        "start": 41247938,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.595G>A",
+        "hgvsp": "p.(Val199Met)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 17,
+    "fields": {
+        "chr": "17",
+        "start": 41247921,
+        "ref": "C",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.612G>C",
+        "hgvsp": "p.Leu204Phe",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 18,
+    "fields": {
+        "chr": "17",
+        "start": 41247917,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.616C>T",
+        "hgvsp": "p.(Gln206*)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 19,
+    "fields": {
+        "chr": "17",
+        "start": 41247896,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.637A>G",
+        "hgvsp": "p.Arg213Gly",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 20,
+    "fields": {
+        "chr": "17",
+        "start": 41247894,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.639G>A",
+        "hgvsp": "p.(=)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 21,
+    "fields": {
+        "chr": "17",
+        "start": 41247892,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.641A>G",
+        "hgvsp": "p.(Asp214Gly)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 22,
+    "fields": {
+        "chr": "17",
+        "start": 41247881,
+        "ref": "A",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.652T>C",
+        "hgvsp": "p.(=)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 23,
+    "fields": {
+        "chr": "17",
+        "start": 41247872,
+        "ref": "C",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.661G>T",
+        "hgvsp": "p.Ala221Ser",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 24,
+    "fields": {
+        "chr": "17",
+        "start": 41247864,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.669G>A",
+        "hgvsp": "p.(=)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 25,
+    "fields": {
+        "chr": "17",
+        "start": 41247863,
+        "ref": "C",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.670G>C",
+        "hgvsp": "p.?, p.(Ala224Pro)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 26,
+    "fields": {
+        "chr": "17",
+        "start": 41247862,
+        "ref": "C",
+        "alt": "-",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.670+1delG",
+        "hgvsp": "?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 27,
+    "fields": {
+        "chr": "17",
+        "start": 41247862,
+        "ref": "C",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.670+1G>T",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 28,
+    "fields": {
+        "chr": "17",
+        "start": 41247856,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.670+7G>A",
+        "hgvsp": "?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 29,
+    "fields": {
+        "chr": "17",
+        "start": 41247855,
+        "ref": "G",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.670+8C>A",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 30,
+    "fields": {
+        "chr": "17",
+        "start": 41247855,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.670+8C>T",
+        "hgvsp": "p.?, p.=, ?, NA",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 31,
+    "fields": {
+        "chr": "17",
+        "start": 41245666,
+        "ref": "-",
+        "alt": "GG",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.1881_1882insCC",
+        "hgvsp": "p.(Ser628Profs*5)",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 32,
+    "fields": {
+        "chr": "17",
+        "start": 41245664,
+        "ref": "A",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.1884T>G",
+        "hgvsp": "p.Ser628Arg",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 33,
+    "fields": {
+        "chr": "17",
+        "start": 41245656,
+        "ref": "A",
+        "alt": "AA",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.1892dup",
+        "hgvsp": "p.(Ser632Lysfs*4)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 34,
+    "fields": {
+        "chr": "17",
+        "start": 41245653,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.1895G>A",
+        "hgvsp": "p.Ser632Asn",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 35,
+    "fields": {
+        "chr": "17",
+        "start": 41243732,
+        "ref": "G",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3816C>A",
+        "hgvsp": "p.(Asn1272Lys)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 36,
+    "fields": {
+        "chr": "17",
+        "start": 41243725,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3823A>G",
+        "hgvsp": "p.(Ile1275Val), p.Ile1275Val",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 37,
+    "fields": {
+        "chr": "17",
+        "start": 41243713,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3835G>A",
+        "hgvsp": "p.(Ala1279Thr)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 38,
+    "fields": {
+        "chr": "17",
+        "start": 41243707,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3841C>T",
+        "hgvsp": "p.(Gln1281*)",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 39,
+    "fields": {
+        "chr": "17",
+        "start": 41243703,
+        "ref": "T",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3845A>T",
+        "hgvsp": "p.(Glu1282Val)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 40,
+    "fields": {
+        "chr": "17",
+        "start": 41243697,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3851A>G",
+        "hgvsp": "p.His1284Arg",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 41,
+    "fields": {
+        "chr": "17",
+        "start": 41243670,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3878C>T",
+        "hgvsp": "p.Ala1293Val",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 42,
+    "fields": {
+        "chr": "17",
+        "start": 41243659,
+        "ref": "A",
+        "alt": "-",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3889delT",
+        "hgvsp": "p.(fs)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 43,
+    "fields": {
+        "chr": "17",
+        "start": 41243645,
+        "ref": "A",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3903T>A",
+        "hgvsp": "p.(Ser1301Arg), p.(Ser1340Arg)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 44,
+    "fields": {
+        "chr": "17",
+        "start": 41243644,
+        "ref": "C",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3904G>T",
+        "hgvsp": "p.(Glu1302*)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 45,
+    "fields": {
+        "chr": "17",
+        "start": 41243638,
+        "ref": "C",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3910G>T",
+        "hgvsp": "p.(Glu1304*)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 46,
+    "fields": {
+        "chr": "17",
+        "start": 41243634,
+        "ref": "T",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3914A>T",
+        "hgvsp": "p.(Asp1305Val)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 47,
+    "fields": {
+        "chr": "17",
+        "start": 41243630,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3918G>A",
+        "hgvsp": "p.=",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 48,
+    "fields": {
+        "chr": "17",
+        "start": 41243630,
+        "ref": "C",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3918G>T",
+        "hgvsp": "p.(Leu1306Phe)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 49,
+    "fields": {
+        "chr": "17",
+        "start": 41243619,
+        "ref": "G",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3929C>A",
+        "hgvsp": "p.Thr1310Lys",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 50,
+    "fields": {
+        "chr": "17",
+        "start": 41243589,
+        "ref": "G",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3959C>G",
+        "hgvsp": "p.(Ser1320Cys)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 51,
+    "fields": {
+        "chr": "17",
+        "start": 41243554,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.3994G>A",
+        "hgvsp": "p.(Gly1332*)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 52,
+    "fields": {
+        "chr": "17",
+        "start": 41243546,
+        "ref": "A",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4002T>C",
+        "hgvsp": "p.(=)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 53,
+    "fields": {
+        "chr": "17",
+        "start": 41243533,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4015G>A",
+        "hgvsp": "p.(Glu1339Lys)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 54,
+    "fields": {
+        "chr": "17",
+        "start": 41243523,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4025C>T",
+        "hgvsp": "p.(Ser1342Leu)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 55,
+    "fields": {
+        "chr": "17",
+        "start": 41243522,
+        "ref": "T",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4026A>C",
+        "hgvsp": "p.(=)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 56,
+    "fields": {
+        "chr": "17",
+        "start": 41243512,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4036G>A",
+        "hgvsp": "p.Glu1346Lys, p.(Glu1346Lys)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 57,
+    "fields": {
+        "chr": "17",
+        "start": 41243509,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4039A>G",
+        "hgvsp": "p.(Arg1347Gly), p.Arg1347Gly",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 58,
+    "fields": {
+        "chr": "17",
+        "start": 41243503,
+        "ref": "T",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4045A>C",
+        "hgvsp": "p.Thr1349Pro",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 59,
+    "fields": {
+        "chr": "17",
+        "start": 41243502,
+        "ref": "G",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4046C>G",
+        "hgvsp": "p.Thr1349Arg",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 60,
+    "fields": {
+        "chr": "17",
+        "start": 41243502,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4046C>T",
+        "hgvsp": "p.(Thr1349Met), p.Thr1349Met",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 61,
+    "fields": {
+        "chr": "17",
+        "start": 41243494,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4054G>A",
+        "hgvsp": "p.(Glu1352Lys)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 62,
+    "fields": {
+        "chr": "17",
+        "start": 41243491,
+        "ref": "C",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4057G>T",
+        "hgvsp": "p.(Glu1353*)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 63,
+    "fields": {
+        "chr": "17",
+        "start": 41243467,
+        "ref": "T",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4081A>C",
+        "hgvsp": "p.Met1361Leu",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 64,
+    "fields": {
+        "chr": "17",
+        "start": 41243460,
+        "ref": "G",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4088C>G",
+        "hgvsp": "p.(Ser1363*)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 65,
+    "fields": {
+        "chr": "17",
+        "start": 41243452,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4096G>A",
+        "hgvsp": "p.(Gly1366Ser)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 66,
+    "fields": {
+        "chr": "17",
+        "start": 41243451,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4096+1G>A",
+        "hgvsp": "?",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 67,
+    "fields": {
+        "chr": "17",
+        "start": 41243449,
+        "ref": "T",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4096+3A>T",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 68,
+    "fields": {
+        "chr": "17",
+        "start": 41243446,
+        "ref": "C",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4096+6G>A",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 69,
+    "fields": {
+        "chr": "17",
+        "start": 41243425,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4096+27C>T",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 70,
+    "fields": {
+        "chr": "17",
+        "start": 41243290,
+        "ref": "T",
+        "alt": "-",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4096+162delA",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 71,
+    "fields": {
+        "chr": "17",
+        "start": 41243190,
+        "ref": "T",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4097-141A>C",
+        "hgvsp": "p.(=)",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 72,
+    "fields": {
+        "chr": "17",
+        "start": 41243070,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.4097-21C>T",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 73,
+    "fields": {
+        "chr": "17",
+        "start": 41249315,
+        "ref": "T",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.548-9A>G",
+        "hgvsp": "p.?",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 74,
+    "fields": {
+        "chr": "17",
+        "start": 41249302,
+        "ref": "A",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.552T>C",
+        "hgvsp": "p.=",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 75,
+    "fields": {
+        "chr": "17",
+        "start": 41249298,
+        "ref": "A",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.556T>G",
+        "hgvsp": "p.(Ser186Ala)",
+        "score": 3,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 76,
+    "fields": {
+        "chr": "17",
+        "start": 41249297,
+        "ref": "G",
+        "alt": "T",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.557C>A",
+        "hgvsp": "p.(Ser186Tyr), p.Ser186Tyr",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 77,
+    "fields": {
+        "chr": "17",
+        "start": 41277277,
+        "ref": "G",
+        "alt": "A",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.-20+11C>T",
+        "hgvsp": "p.?",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 78,
+    "fields": {
+        "chr": "17",
+        "start": 41277187,
+        "ref": "G",
+        "alt": "C",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.-20+101C>G",
+        "hgvsp": "p.(=)",
+        "score": 5,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 79,
+    "fields": {
+        "chr": "17",
+        "start": 41276266,
+        "ref": "A",
+        "alt": "G",
+        "gene": 1,
+        "build": 1,
+        "hgvsc": "c.-19-134T>C",
+        "hgvsp": "p.(=)",
+        "score": 4,
+        "created_at": "2022-03-04T10:47:35.454Z",
+        "updated_at": "2022-03-04T10:47:35.454Z",
+        "created_by": null,
+        "updated_by": null,
+        "ACMG": []
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 80,
+    "fields": {
+        "chr": "11",
+        "start": 5247827,
+        "ref": "C",
+        "alt": "T",
+        "gene": 2,
+        "build": 1,
+        "hgvsc": "c.295G>A",
+        "hgvsp": "p.(Val99Met)",
+        "score": 5,
+        "created_at": "2022-03-04T10:53:47.999Z",
+        "updated_at": "2022-03-04T10:53:47.999Z",
+        "created_by": 1,
+        "updated_by": 1,
+        "ACMG": [
+            2,
+            3,
+            13,
+            15
+        ]
+    }
+},
+{
+    "model": "vdb.variant",
+    "pk": 81,
+    "fields": {
+        "chr": "13",
+        "start": 32893291,
+        "ref": "G",
+        "alt": "T",
+        "gene": 3,
+        "build": 1,
+        "hgvsc": "c.145G>T",
+        "hgvsp": "p.(Glu49Ter)",
+        "score": 5,
+        "created_at": "2022-03-04T10:56:33.066Z",
+        "updated_at": "2022-03-04T10:56:33.066Z",
+        "created_by": 1,
+        "updated_by": 1,
+        "ACMG": [
+            2,
+            3,
+            4
         ]
     }
 }
