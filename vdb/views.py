@@ -106,3 +106,8 @@ def update_variant(request, pk=None):
 def error_404_view(request, exception):
     data = {}
     return render(request, 'vdb/error_404.html', data)
+
+
+def error_500_view(request):
+    data = {}
+    return render(request, 'vdb/home.html', data)

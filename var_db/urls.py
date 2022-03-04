@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import handler404
+from django.conf.urls import handler500
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,3 +24,4 @@ urlpatterns = [
 ]
 
 handler404 = 'vdb.views.error_404_view'
+handler500 = 'vdb.views.error_500_view'
