@@ -27,9 +27,10 @@ def variantviewer(request, pk):
     ACMG = [model_to_dict(t) for t in variant['ACMG']]
     return render(request, 'vdb/variant_viewer.html', {'variant': variant, 'ACMG': ACMG})
 
+
 def genelist(request):
     genes = Gene.objects.all()
-    return render(request, 'vdb/gene_list.html', {'genes' : genes})
+    return render(request, 'vdb/gene_list.html', {'genes': genes})
   
   
 # form views
@@ -100,3 +101,8 @@ def update_variant(request, pk=None):
             messages.success(request, "Variant successfully updated.")
             return redirect('variant_viewer', pk=variant.pk)
     return render(request, 'vdb/variant_update.html', {'form': form})
+
+
+def error_404_view(request, exception):
+    data = {}
+    return render(request, 'vdb/error_404.html', data)

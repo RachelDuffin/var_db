@@ -3,7 +3,7 @@ from . import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('', views.home, name='home'),	
+    path('', views.home, name='home'),
 
     # authentication pages
     path('login/', auth_views.LoginView.as_view(template_name='vdb/login.html'), name = 'login'),
@@ -21,5 +21,5 @@ urlpatterns = [
 
     # search pages
     path('search/results', views.searchdb, name='search_results')
-
     ]
+
