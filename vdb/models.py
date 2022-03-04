@@ -63,7 +63,6 @@ class Variant(models.Model):
     updated_by = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True,
                                    on_delete=models.PROTECT, related_name="var_updated_by")
 
-
     class Meta:
         constraints = [
             models.UniqueConstraint(fields=["build", "chr", "start", "ref", "alt"], name="unique_variant")
